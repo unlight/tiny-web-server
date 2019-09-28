@@ -36,6 +36,12 @@ default to 9999, just like `python -m SimpleHTTPServer`
 I use it as a lightweight File Browser.
 
 
+## DOCKER
+```
+docker run -v "your dir":/htdocs -it -p 8080:9999 tinys /app/main /htdocs
+```
+
+
 TODO
 ----
 
