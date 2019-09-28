@@ -49,6 +49,7 @@ mime_map meme_types [] = {
     {".jpg", "image/jpeg"},
     {".ico", "image/x-icon"},
     {".js", "application/javascript"},
+    {".json", "application/json"},
     {".pdf", "application/pdf"},
     {".mp4", "video/mp4"},
     {".png", "image/png"},
