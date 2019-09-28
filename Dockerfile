@@ -6,7 +6,8 @@ RUN make
 RUN rm tiny.c Makefile
 RUN chmod +x tiny 
 
-FROM scratch
-COPY --from=0 /app/tiny /app/main
+FROM alpine:3.10
+ENV htdocs=/htdocs
+COPY --from=0 /app/tiny /bin/tiny
 EXPOSE 9999/tcp
-CMD ["/app/main"]
+CMD ["/bin/tiny", "$htdocs", "9999"]

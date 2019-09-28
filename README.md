@@ -36,11 +36,11 @@ default to 9999, just like `python -m SimpleHTTPServer`
 I use it as a lightweight File Browser.
 
 
-## DOCKER
+## Docker
+Directory `/htdocs` will served inside docker on port 9999:
 ```
-docker run -v "your dir":/htdocs -it -p 8080:9999 tinys /app/main /htdocs
+docker run -v "/path/to/files":/htdocs -p 8080:9999 tinys /bin/tiny
 ```
-
 
 TODO
 ----
